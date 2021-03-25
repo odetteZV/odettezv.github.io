@@ -25,18 +25,17 @@
 
         function aumentar() {
             const imgToChange= document.querySelector('.slider__image')
-            contador++
-            if (contador <  imagArr.length ) {
+            if (contador <  imagArr.length-1 ) {
+                contador++
                 imgToChange.src = imagArr[contador]
             }
         }
 
         function disminuir() {
             const imgToChange= document.querySelector('.slider__image')
-            contador--
-            if (contador >=  0 ) {
+            if (contador >  0 ) {
+                contador--
                 imgToChange.src = imagArr[contador]
-                console.log(imgToChange.src)
             }
         }
     </script>
