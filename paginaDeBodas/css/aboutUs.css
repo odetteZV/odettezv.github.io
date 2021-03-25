@@ -1,0 +1,17 @@
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about__sections{
+    width: 250px;
+    height: 200px;
+    text-align: center;
+}
+
+.about__img{
+    width: 75%;
+}
+.about__anchor{
+    cursor: pointer;
+}

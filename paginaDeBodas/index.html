@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const imagArr = [
+            "https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/1.jpg?raw=true",
+            "https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/2.jpg?raw=true",
+            "https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/3.jpg?raw=true",
+            "https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/4.jpg?raw=true",
+            "https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/5.jpg?raw=true"]
+        let contador = 0
+
+        function aumentar() {
+            const imgToChange= document.querySelector('.slider__image')
+            contador++
+            if (contador <  imagArr.length ) {
+                imgToChange.src = imagArr[contador]
+            }
+        }
+
+        function disminuir() {
+            const imgToChange= document.querySelector('.slider__image')
+            contador--
+            if (contador >=  0 ) {
+                imgToChange.src = imagArr[contador]
+                console.log(imgToChange.src)
+            }
+        }
+    </script>
+    <main class="main__container">
+        <header class="header" >
+            <div class="header__container">
+                <figure>
+                <img class="header__logo" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/logo.png?raw=true" alt="logo">
+                </figure>
+
+                <figure class="header__menu">
+                    <img src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/lista.svg?raw=true" alt="menu" width="20px">
+                </figure>
+
+                <nav class="header__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item"> <a href="#">Home</a></li>
+                        <li class="menu__item"> <a href="#ourservices">Our services</a></li>
+                        <li class="menu__item"> <a href="#aboutus">About us</a></li>
+                        <li class="menu__item"> <a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+ 
+     <section class="home__container">
+        <div class="home__slider">
+           
+            <figure>
+            <img class="home__slider-left"  onclick="disminuir()" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/izquierda.png?raw=true" alt="flecha" width="40">
+            </figure>
+
+            <figure>
+            <img class="slider__image" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/1.jpg?raw=true" alt="imagen">
+            </figure>
+        
+            <figure>
+            <img class="home__slider-right" onclick="aumentar()" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/derecha.png?raw=true" alt="flecha" width="40">
+            </figure>
+            
+        </div> 
+        
+        <h3 class="section__title" name="ourservices" id="ourservices">Our Services</h3>
+        <div class="services__photos">
+            <figure class="services__photos-fig">
+                <img class="photo" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/decoration.jpg?raw=true" alt="fotografía de mesa decorada para una boda con flores y copas" >
+            </figure>
+            <figure class="services__photos-fig">
+                <img  class="photo" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/friends.jpg?raw=true" alt="fotografía de damas de honor" >
+            </figure>
+            <figure class="services__photos-fig">
+                <img class="photo" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/shoes.jpg?raw=true" alt="fotografía de ramo de flores y buquet de la novia" >
+            </figure>
+        </div>
+    </section>
+    
+   
+    <section class="services">
+
+        <div class="service__items">
+            <figure>
+                <img src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/bouquet.png?raw=true" alt="bouquet de flores" width="50px" height="50px">
+                <figcaption class="figcaption__fontsize"> <a class="service__anchor" href="#">Flower Design</a> </figcaption>
+            </figure>
+        </div>
+
+        <div class="service__items">
+            <figure>
+                <img src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/camera.png?raw=true" alt="icono de cámara fotográfica" width="50px" height="50px">
+                <figcaption class="figcaption__fontsize"> <a class="service__anchor" href="#">Photography</a></figcaption>
+            </figure>  
+        </div>
+
+        <div class="service__items">
+            <figure>
+                <img src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/deco.png?raw=true" alt="icono de cámara fotográfica" width="50px" height="50px">
+                <figcaption class="figcaption__fontsize"> <a class="service__anchor" href="#">Decoration</a></figcaption>
+            </figure>
+        </div>
+
+        <div class="service__items">
+            <figure>
+                <img src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/cake.png?raw=true" alt="icono de cámara fotográfica" width="50px" height="50px">
+                <figcaption class="figcaption__fontsize"> <a class="service__anchor" href="#">Wedding Cake</a></figcaption>
+            </figure>
+        </div>
+    </section>  
+
+    <h3 class="section__title" name="aboutus" id="aboutus">About us</h3>
+    <section class="about">
+        <div class="about__sections">
+            <figure>
+                <a class="about__anchor" href="#aboutus"> <img class="about__img" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/location.jpg?raw=true" alt="Wedding location ideas"></a> 
+                <figcaption class="figcaption__fontsize">Wedding Locations</figcaption>
+            </figure>
+        </div>
+        <div class="about__sections">
+            <figure>
+                <a class="about__anchor" href="#aboutus">  <img class="about__img" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/cakes.jpg?raw=true" alt="wedding cakes ideas"></a> 
+                <figcaption class="figcaption__fontsize">Cakes and Desserts</figcaption>
+            </figure>
+        </div>
+        <div class="about__sections">
+            <figure>
+                <a class="about__anchor" href="#aboutus">  <img class="about__img" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/bouquet.jpg?raw=true" alt="wedding flowers ideas"></a> 
+                <figcaption class="figcaption__fontsize">Flower design</figcaption>
+            </figure>
+        </div>
+        <div class="about__sections">
+            <figure>
+                <a class="about__anchor" href="#aboutus"> <img class="about__img" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/photography.jpg?raw=true" alt="wedding photography"></a> 
+                <figcaption class="figcaption__fontsize">Photography</figcaption>
+            </figure>
+        </div>
+        <div class="about__sections">
+            <figure>
+                <a class="about__anchor" href="#aboutus"> <img class="about__img" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/deco.jpg?raw=true" alt="decoration for weddings"></a> 
+                <figcaption class="figcaption__fontsize">Decoration</figcaption>
+            </figure>
+        </div>
+        <div class="about__sections">
+            <figure>
+                <a class="about__anchor" href="#aboutus"> <img class="about__img" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/photos.jpg?raw=true" alt="bride and groom"></a> 
+                <figcaption class="figcaption__fontsize">Couples</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="contact" name="contact" id="contact">
+        <div class="contact__fig">
+            <figure>
+                <img class="contact__img" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/weddings.jpg?raw=true" alt="wedding couple photo">
+            </figure>
+        </div>
+        <div class="contact__form">
+            <form action="">
+                <h4 class="contact__title">Contact Us</h4> 
+            
+                <label class="contact__items" for="mail">
+                    <input class="contact__input" type="email" id="mail" placeholder="Email">
+                </label>
+                
+               
+                <label class="contact__items" for="msg">
+                    <textarea class="contact__textarea" name="user_msg" id="msg" placeholder="Write your message..."></textarea>
+                </label>
+
+               <input class="contact__button" type="button" value="Send"> 
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__item">
+                <figure>
+                    <img class="footer__icon" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/instagram.png?raw=true" alt="instagram" title="instagram">
+                </figure>
+            </div>
+            <div class="footer__item">
+                <figure>
+                    <img class="footer__icon" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/twitter.png?raw=true" alt="twitter" title="twitter">
+                </figure>
+            </div>
+            <div class="footer__item">
+                <figure>
+                    <img class="footer__icon" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/youtube.png?raw=true" alt="youtube" title="youtube">
+                </figure>
+            </div>
+            <div class="footer__item">
+                <figure>
+                    <img class="footer__icon" src="https://github.com/odetteZV/PaginaWebDeBodas/blob/main/images/facebook.png?raw=true" alt="facebook" title="facebook">
+                </figure>
+            </div>
+        </div>
+        
+        <div class="footer__p">
+        <p> &copy; 2021.All Rights Reserved, Designed by Odette Zeiter.</p>
+        </div>
+    </footer>
+</main>
+
+
+</body>
+</html>

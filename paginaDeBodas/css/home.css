@@ -1,0 +1,26 @@
+.home__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.home__slider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.slider__image{
+    max-width: 930px;
+    width: 100%;
+    margin: 0  auto;
+}
+.home__slider-left{
+    cursor: pointer;
+    width: 20px;
+}
+.home__slider-right{
+    cursor: pointer;
+    width: 20px;
+}
+

@@ -1,0 +1,77 @@
+.contact{
+    position: relative;
+}
+.contact__title{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: grey;
+}
+.contact__fig{
+    min-width: 320px;
+}
+.contact__img{
+    width: 100%;
+}
+.contact__items{
+    display: block;
+    padding: 2px;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    
+}
+.contact__form{
+    position: absolute;
+    top:0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.contact__input{
+    border-color: transparent;
+    width: 150px;
+}
+.contact__textarea{
+    border-color: transparent;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact__button{
+    width: 50px;
+    border-radius: 3px;
+    background-color: rgb(56, 54, 54);
+    color: white;
+    font-weight: bold
+}
+.contact__button:hover{
+    cursor: pointer;
+    font-size: 0.9rem;
+    color:black;
+    background-color: rgba(187, 187, 187, 0.747);
+}
+
+@media (min-width: 600px){
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .contact__fig{
+        position: inherit;
+        width: 50%;
+        margin-left: 25px;
+    }
+    .contact__img{
+        width: 100%;
+    }
+    .contact__form{
+        position: inherit;
+        background-color: rgb(255, 245, 245);
+        width: 50%;
+        margin-left: 15px;
+    }
+
+}
+
