@@ -1,0 +1,1 @@
+this repository seeks to collect my favorite projects
