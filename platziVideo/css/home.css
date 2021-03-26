@@ -250,3 +250,8 @@ p{
 .footer a:hover {
     text-decoration: underline;
 }
+.footer__p{
+    font-size: 0.7rem;
+    margin-top: 70px;
+    margin-left: 200px;
+}
