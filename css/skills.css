@@ -1,0 +1,23 @@
+.skills__section-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.skills__section-list li{
+    list-style-type: none;
+    padding: 3px;
+}
+@media (min-width: 600px){
+    .skills__section-list{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+    }
+    .skills__section-list li{
+        list-style-type: none;
+    }
+}

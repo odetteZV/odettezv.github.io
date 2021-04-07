@@ -1,0 +1,29 @@
+.about__section{
+    margin-top: 40px;
+}
+.about__p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+@media (min-width: 600px){
+    .about__section{
+        margin-top: 40px;
+    }
+    .about__p{
+        color: white;
+        width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media (min-width: 800px){
+    .about__section{
+        margin-top: 40px;
+    }
+    .about__p{
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+}
