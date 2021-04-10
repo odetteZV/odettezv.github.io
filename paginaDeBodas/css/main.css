@@ -4,21 +4,17 @@
     padding: 0;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 html{
     font-size:100%;
 
 }
-.main__container{
-    max-width: 920px;
-    margin: 0 auto;
-}
-
 .section__title{
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    padding: 10px;
 }
 .figcaption__fontsize{
     font-size: 0.8rem;

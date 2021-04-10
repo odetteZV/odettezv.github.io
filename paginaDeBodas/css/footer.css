@@ -1,3 +1,10 @@
+footer{
+    position: relative;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 60px;
+}
 .footer{
     display: flex;
     justify-content: center;
@@ -14,4 +21,9 @@
     text-align: center;
     font-size: 0.7rem;
     margin-bottom: 10px;
+}
+@media (min-width: 760px){
+    footer{
+        background-color: #fff5f6;
+    }
 }

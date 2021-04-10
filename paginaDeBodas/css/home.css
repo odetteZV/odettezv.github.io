@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
+    min-width: 320px;
+    height: auto;
 }
 .home__slider{
     display: flex;
     align-items: center;
     width: 100%;
+    min-width: 320px;
+    max-width: 920px;
+    height: auto;
     justify-content: space-around;
 }
 .slider__image{
@@ -23,4 +28,8 @@
     cursor: pointer;
     width: 20px;
 }
-
+@media (min-width: 760px){
+    .home__container{
+        background-color: #fff5f6;
+    }
+}
