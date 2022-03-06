@@ -5,16 +5,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color:  #595959;
+    background-color: #080808;
 }
 .main__container{
     max-width: 800px;
-   /*  background-color: #595959; */
     margin: auto;
 }
 .title,
 .subtitle{
-    color:#ffc8fb;
+    color: white;
     text-align: center;
 }
 .title{

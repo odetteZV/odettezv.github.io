@@ -25,8 +25,3 @@
 .about__anchor{
     cursor: pointer;
 }
-@media (min-width: 760px){
-    .about{
-        background-color: #fff5f6;
-    }
-}

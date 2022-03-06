@@ -1,0 +1,21 @@
+/*Skills section mobile breakpoint*/
+.skills__section-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+.skills__section-list li{
+    list-style-type: none;
+}
+/*Footer section mobile breakpoint*/
+.contact__section-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}

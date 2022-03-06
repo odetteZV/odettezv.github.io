@@ -14,6 +14,5 @@
     text-decoration: none;
  }
  .projects__section-list a:hover{
-    color: #ffc8fb;
-    font-size: 1.2rem;
+    color: rgb(199,160,130);
  }

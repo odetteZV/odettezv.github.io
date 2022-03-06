@@ -41,9 +41,11 @@
 }
 .contact__textarea{
     border-color: transparent;
-    height: 60px;
+    min-height: 100px;
+    width: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
+    resize: none;
 }
 .contact__button{
     width: 50px;
@@ -59,25 +61,4 @@
     background-color: rgba(187, 187, 187, 0.747);
 }
 
-@media (min-width: 600px){
-    .contact{
-        display: flex;
-        justify-content: center;
-    }
-    .contact__fig{
-        position: inherit;
-        width: 50%;
-        margin-left: 25px;
-    }
-    .contact__img{
-        width: 100%;
-    }
-    .contact__form{
-        position: inherit;
-        background-color: rgb(255, 245, 245);
-        width: 50%;
-        margin-left: 15px;
-    }
-
-}
 
